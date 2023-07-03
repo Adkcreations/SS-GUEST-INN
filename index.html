@@ -1,0 +1,446 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>SS Guest INN</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" href="css/style.css">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="css/responsive.css">
+      <!-- fevicon -->
+      <link rel="icon" href="images/fevicon.png" type="image/gif" />
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+   </head>
+   <!-- body -->
+   <body class="main-layout">
+      <!-- loader  -->
+      <div class="loader_bg">
+         <div class="loader"><img src="images/loading.gif" alt="#" /></div>
+      </div>
+      <!-- end loader -->
+      <!-- header -->
+      <header>
+         <!-- header inner -->
+         <div class="header">
+            <div class="container">
+               <div class="row">
+                  <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                     <div class="full">
+                        <div class="center-desk">
+                           <div class="logo">
+                              <a href="index.html" style="font-size:100%;">SS GUEST INN</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                     <nav class="navigation navbar navbar-expand-md navbar-dark ">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarsExample04">
+                           <ul class="navbar-nav mr-auto">
+                              <li class="nav-item">
+                                 <a class="nav-link" href="#about">About</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="#contact">Contact us</a>
+                              </li>
+                           </ul>
+                           <div class="sign_btn"><a href="#testdum">Book Room</a></div>
+                        </div>
+                     </nav>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+      <!-- end header inner -->
+      <!-- end header -->
+      <!-- banner -->
+      <section class="banner_main">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="text-bg">
+                     <div class="padding_lert">
+                        <h1>WELCOME TO SS GUEST INN </h1>
+                        <span>Luxury Stay in Nellore City</span>
+                        <p>Discover comfort and affordability at SS Guest Inn. Our tastefully decorated rooms offer modern amenities for a  delightful stay. Experience exceptional hospitality and value for money in a prime location.</p>
+                        <a href="#">Read More</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- end banner -->
+      <!-- form_lebal -->
+      <!--<section>
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <form class="form_book">
+                     <div class="row">
+                        <div class="col-md-3">
+                           <label class="date">ARRIVAL DATE</label>
+                           <input class="book_n"  type="date" >
+                        </div>
+                        <div class="col-md-3">
+                           <label class="date">DEPARTURE DATE</label>
+                           <input class="book_n"  type="date" >
+                        </div>
+                        <div class="col-md-3">
+                           <label class="date">PERSON</label>
+                           <input class="book_n" placeholder="2" type="type" name="2">
+                        </div>
+                        <div class="col-md-3">
+                           <button class="book_btn">Book Now</button>
+                        </div>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </section>-->
+	  <section>
+  <div  class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <form id="reservationForm" class="form_book">
+          <div id="testdum" class="row">
+            <div class="col-md-3">
+              <label class="date">ARRIVAL DATE</label>
+              <input id="arrivalDate" class="book_n" type="date">
+            </div>
+            <div class="col-md-3">
+              <label class="date">DEPARTURE DATE</label>
+              <input id="departureDate" class="book_n" type="date">
+            </div>
+            <div class="col-md-3">
+              <label class="date">PERSON</label>
+              <input id="numberOfPersons" class="book_n" placeholder="2" type="number" name="2">
+            </div>
+            <div class="col-md-3">
+              <button id="bookBtn" onclick="sendWhatsAppMessage()" class="book_btn">Book Now</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+      <!-- end form_lebal -->
+      <!-- choose  section -->
+      <div class="choose">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-6">
+                  <div class="choose_box">
+                     <div class="titlepage">
+                        <h2><span class="text_norlam">Choose The Perfect</span> <br>Accommodation</h2>
+                     </div>
+					<p>Choose your perfect room for a delightful stay. Explore a range of stylish accommodations tailored to your preferences. From cozy retreats to luxurious suites, we have options to suit every taste. Book your ideal room today and indulge in comfort and relaxation</p>
+                     <a class="read_more" href="#">See More</a>
+                  </div>
+               </div>
+               <div class="col-md-6">
+                  <div class="row">
+                     <div class="col-md-12">
+                        <div class="img_box">
+                           <figure><img src="images/img1.jpg" alt="#"/></figure>
+                        </div>
+                     </div>
+                     <div class="col-md-6">
+                        <div class="img_box">
+                           <figure><img src="images/SS 3.jpg" alt="#"/></figure>
+                        </div>
+                     </div>
+                     <div class="col-md-6">
+                        <div class="img_box">
+                           <figure><img src="images/SS 2.jpg" alt="#"/></figure>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end choose  section -->
+      <!-- our  section -->
+      <div class="our">
+         <div class="container">
+            <div class="row d_flex">
+               <div class="col-md-6">
+                  <div class="img_box">
+                     <figure><img src="images/SS 6.jpg" alt="#"/></figure>
+                  </div>
+               </div>
+               <div class="col-md-6">
+                  <div class="our_box">
+                     <div class="titlepage">
+                        <h2><span class="text_norlam">Our Best </span> <br>Services</h2>
+                     </div>
+					 <p>Experience our exceptional services designed to provide utmost comfort and convenience. Our dedicated staff ensures immaculate room cleanliness and meticulous maintenance, guaranteeing a pristine environment. Enjoy a hassle-free stay with our top-notch room cleaning and attention to detail, allowing you to relax and enjoy your time with us.</p>
+						<a class="read_more" href="#">Read More</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end our  section -->
+      <!-- about -->
+      <div id="about"  class="about">
+         <div class="container-fluid">
+            <div class="row d_flex">
+               <div class="col-md-6">
+                  <div class="about_text">
+                     <div class="titlepage">
+                        <h2>About Our Hotel</h2>
+						<p>Discover our exceptional hotel located in the heart of Nellore city. Experience the best of hospitality with our newly built establishment. Choose between our luxurious Deluxe Rooms and spacious Suite Rooms, designed to provide ultimate comfort and style. Our prime location ensures easy access to the city center, and you'll find popular attractions like MGB Mall and Dmart just a stone's throw away. Immerse yourself in the perfect blend of convenience and elegance at our hotel.</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-6">
+                  <div class="about_img">
+                     <figure><img src="images/SS 5.jpg" alt="#"/></figure>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end about -->
+      <!-- testimonial -->
+      <div class="testimonial">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <h2>Places to Visit in Nellore</h2>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-12">
+                  <div id="myCarousel" class="carousel slide testimonial_Carousel " data-ride="carousel">
+                     <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                     </ol>
+                     <div class="carousel-inner">
+                        <div class="carousel-item active">
+                           <div class="container">
+                              <div class="carousel-caption ">
+                                 <div class="row">
+                                    <div class="col-md-6 margin_boot">
+                                       <div class="test_box">
+                                          <h4 style="text-align:center;">MGB Felicity Mall</h4>
+                                          <i><img src="images/te1.png" alt="#"/></i>
+                                       </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                       <div class="test_box">
+                                          <h4>Narasimhaswamy Temple</h4>
+                                          <i><img src="images/te1.png" alt="#"/></i>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="carousel-item">
+                           <div class="container">
+                              <div class="carousel-caption">
+                                 <div class="row">
+                                    <div class="col-md-6 margin_boot">
+                                       <div class="test_box">
+                                          <h4>Ranganayakulu swamy Temple</h4>
+                                          <i><img src="images/te1.png" alt="#"/></i>
+                                       </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                       <div class="test_box">
+                                          <h4>Bara Shaheed Darga</h4>
+                                          <i><img src="images/te1.png" alt="#"/></i>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="carousel-item">
+                           <div class="container">
+                              <div class="carousel-caption">
+                                 <div class="row">
+                                    <div class="col-md-6 margin_boot">
+                                       <div class="test_box">
+                                          <h4>River Penna</h4>
+                                          <i><img src="images/te1.png" alt="#"/></i>
+                                       </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                       <div class="test_box">
+                                          <h4>Mypadu Beach</h4>
+                                          <i><img src="images/te1.png" alt="#"/></i>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                     <span class="sr-only">Previous</span>
+                     </a>
+                     <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                     <span class="sr-only">Next</span>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end testimonial -->
+      <!--  footer -->
+      <footer id="contact">
+         <div class="footer">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-6">
+                     <div class="titlepage">
+                        <h2>Contact Us</h2>
+                     </div>
+                     <div class="cont">
+                        <h3>SS GUEST INN </h3>
+						                        <p>Discover comfort and affordability at SS Guest Inn. Our tastefully decorated rooms offer modern amenities for a  delightful stay. Experience exceptional hospitality and value for money in a prime location.</p>
+
+                     </div>
+                  </div>
+                  <div class="col-md-6">
+                     <form id="request" class="main_form">
+                        <div class="row">
+                           <div class="col-md-12 ">
+                              <input class="contactus" placeholder="Full Name" id = "cname" type="type" name="Full Name"> 
+                           </div>
+                           <div class="col-md-12">
+                              <input class="contactus" placeholder="Email" id="cemail" type="type" name="Email"> 
+                           </div>
+                           <div class="col-md-12">
+                              <input class="contactus" placeholder="Phone Number" id="cphone" type="type" name="Phone Number">                          
+                           </div>
+                           <div class="col-md-12">
+                              <textarea class="textarea" placeholder="Message" id="cmessage" type="type" Message="Name">Message </textarea>
+                           </div>
+                           <div class="col-sm-12">
+                              <button class="send_btn" onclick="sendWhatsAppMessage2()">Send</button>
+                           </div>
+                        </div>
+                     </form>
+                  </div>
+               </div>
+            </div>
+            <div class="copyright">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-md-12">
+                        <p>Copyright 2023 All Right Reserved By ADK Creations</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- end footer -->
+      <!-- Javascript files-->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+      <script src="js/plugin.js"></script>
+      <!-- sidebar -->
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="js/custom.js"></script>
+      <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+	<script>function sendWhatsAppMessage() {
+  // Get form data
+  const arrivalDate = document.getElementById('arrivalDate').value;
+  const departureDate = document.getElementById('departureDate').value;
+  const numberOfPersons = document.getElementById('numberOfPersons').value;
+  const phoneNumber = '9398653670';
+
+  // Format the message
+  const message = `
+    ARRIVAL DATE: ${arrivalDate}
+    DEPARTURE DATE: ${departureDate}
+    NUMBER OF PERSONS: ${numberOfPersons}
+  `;
+
+  // Format the phone number (remove any non-digit characters)
+  const formattedPhoneNumber = phoneNumber.replace(/\D/g, '');
+
+  // Encode the message text
+  const encodedMessage = encodeURIComponent(message);
+
+  // Construct the WhatsApp URL
+  const whatsappUrl = `https://wa.me/${formattedPhoneNumber}?text=${encodedMessage}`;
+
+  // Open the WhatsApp URL in a new tab or window
+  window.open(whatsappUrl, '_blank');
+}
+</script>
+<script>
+function sendWhatsAppMessage2() {
+  // Get form data
+  const name = document.getElementById('cname').value;
+  const phone = document.getElementById('cphone').value;
+  const email = document.getElementById('cemail').value;
+  const message = document.getElementById('cmessage').value;
+  const phoneNumber = '9398653670';
+
+  // Format the message
+  const message = `
+    Name: ${name}
+    Mobile No: ${phone}
+    Email: ${email}
+	Message: ${message}
+  `;
+
+  // Format the phone number (remove any non-digit characters)
+  const formattedPhoneNumber = phoneNumber.replace(/\D/g, '');
+
+  // Encode the message text
+  const encodedMessage = encodeURIComponent(message);
+
+  // Construct the WhatsApp URL
+  const whatsappUrl = `https://wa.me/${formattedPhoneNumber}?text=${encodedMessage}`;
+
+  // Open the WhatsApp URL in a new tab or window
+  window.open(whatsappUrl, '_blank');
+}
+</script>
+   </body>
+</html>
+
